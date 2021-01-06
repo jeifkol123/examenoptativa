@@ -121,24 +121,7 @@ function removeTable(donante){
     gastosTotales();
 }
 
-function gastosTotales(){
-    let tablaTotal = document.getElementById("Total");
-    let dineros = JSON.parse(localStorage.getItem("Fechas"));
-    console.log(dineros.length)
-    let gastosTotal = 0;
 
-    if(dineros.length == 0){
-        tablaTotal.innerHTML = ``;
-    }else{
-        for(x = 0; x < dineros.length; x++ ){
-    
-            let dinero = Number(dineros[x].gasto);
-            gastosTotal = gastosTotal + dinero;
-            tablaTotal.innerHTML = ``;
-        }
-    }
-    
-}
 getTable()
 gastosTotales()
 
@@ -161,7 +144,7 @@ function modal(donante, gasto, descrip){
             <span>${donante}</span>
         </div>
         <div class="texto texto-cab">
-            <p>Monto: </p>
+            <p>Fecha: </p>
             <span>${gasto}</span>
         </div>
         <div class="texto">
