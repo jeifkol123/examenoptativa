@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Donaciones Covid</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="js/aniadir_nuevo.js"></script>
+</head>
+<body>
+<div id="bg"></div>
+<div id="container">
+    <header style="color: white">
+        <img src="assets/img1.jpg">
+
+        <h2>Donaciones Covid</h2>
+
+ <ul style="padding-top: 100px;">
+        <nav>
+
+
+            <a href="/html/principal.html">
+                <li>Inicio</li>
+            </a>
+            <a href="nuevadonacion.html">
+                <li>Donar</li>
+            </a>
+            <a href="registrouser.html">
+                <li>Registro</li>
+            </a>
+            <a href="acercade.html">
+                <li>Acerca de</li>
+            </a>
+
+            <a href="ideapropuesta.html">
+                <li>información idea propuesta</li>
+            </a>
+
+
+
+            <a href="index.html">
+                <li>Salir</li>
+            </a>
+
+        </nav>
+        </ul>
+
+
+        <div id="ellipsis">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="container2"
+         style="align-content: center; color: white; margin-top: 150px; margin-left: 18%; ">
+        <main>
+            <header>
+                <h3>Donación:</h3>
+                <hr>
+
+
+                <form>
+                    <div class="form-group">
+                        <p>
+                            <label>TIPO DE DONACIÓN:</label> <br>
+                            <br>
+                        </p>
+                        <form class="usuario" method="get" name="formulario">
+                            <datalist id="datos">
+                                <option label="" value="comida">
+                                <option label="" value="ropa">
+                                <option label="" value="dinero">
+                            </datalist>
+                            <p><label> <input class="usuario" id="tipo"
+                                              list="datos"
+                                              name="telefono"
+                                              placeholder="Ingrese el tipo de donación..." required
+                                              type="tel"></label></p>
+
+                        </form>
+                        <p>
+                            <label>DETALLES:</label> <br>
+                            <input class="usuario" id="detalles" minlength="1"
+                                   placeholder="Ingrese los detalles de lo donado..."
+                                   required step="any"
+                                   type="text"><br>
+                        </p>
+                        <p>
+                            <label>FECHA:</label> <br>
+                            <input class="usuario" id="fecha" minlength="1"
+                                   placeholder="Ingrese la fecha en que donó..."
+                                   required step="any"
+                                   type="datetime"> <br>
+                        </p>
+
+
+                        <button class="boton" id="guardar" style="margin-top: 20px" type="button">
+                            Guardar
+                        </button>
+                    </div>
+                </form>
+                <p id="resultado"></p>
+                <br>
+
+                <td>
+                </td>
+                <tr>
+                </tr>
+                <p style="margin-top: 100px">Donaciones Covid</p>
+            </header>
+        </main>
+    </div>
+
+</div>
+</body>
+</html>

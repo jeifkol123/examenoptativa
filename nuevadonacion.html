@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  
+        <link rel="stylesheet" href="app.css">
+   <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documenta Tu Donación</title>
+</head>
+<body>
+  <div id="bg"></div>
+    <header>
+        <nav class="sidebar wrapper">
+            <div class=""><span>Administrar Donación</span></div>
+        </nav>
+    </header> 
+
+        
+        <div class="contenido wrapper">
+            <div class="tabla">
+                <table>
+                    <thead>
+                        <tr class="head">
+                            <th class="nombre">Donante</th> <th class="gasto">Fecha</th> <th class="des">Detalle</th> <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla">
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="bton">
+                <div id="Total">
+                    <p></p> <span> </span>
+                </div>
+                <a class="agregar" onclick="abrir()"><i class="fas fa-plus"></i> Agregar</a>
+            </div>
+            <div class="modal" id="Modal">
+                <div class="flex">
+                    <div class="contenido-modal" id="modalContetn">
+                        <header onclick="modal()">
+                            <i class="fas fa-times"></i>
+                        </header>
+                        
+                        <div class="donante">Administrar tu Donación</div>
+                        <div class="textos">
+                            <div class="texto texto-cab">
+                                <p>Donante: </p>
+                                <span>......</span>
+                            </div>
+                            <div class="texto texto-cab">
+                                <p>Fecha: </p>
+                                <span>....</span>
+                            </div>
+                            <div class="texto">
+                                <p>Detalle: </p>
+                                <span>......</span>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <div class="addFecha">
+        <div class="wrapper">
+            <h2>Agregar Nueva Donación</h2>
+            <div class="inputs">
+                <div class="input" id="donanteInput">
+                    <label for="Donante">Donante</label>
+                    <input type="text" id="Donante" maxlength="10">
+                </div>
+                <div class="input" id="gastoInput">
+                    <label for="Fecha">Fecha</label>
+                    <input type="date" id="Fecha" max="10">
+                </div>
+                <div class="input" id="descripInput">
+                    <label for="Detail">Detalle</label>
+                    <textarea id="Detail" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="bton">
+                <a class="agregar" onclick="save()"><i class="fas fa-plus"></i> Agregar</a>
+            </div>
+            <div class="bton">
+                <a class="agregar" onclick="abrir()">Regresar</a>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Login</title>
+    <link href="css/estilo.css" rel="stylesheet"/>
+    <link href="style.css" rel="stylesheet"/>
+
+    <script src="js/loginaccesousuario.js"></script>
+
+</head>
+<body>
+<div id="bg"></div>
+ 
+  <div id="container" style="color: white; margin-left: 5%">
+    <h2>Donaciones Covid</h2>
+    <header>
+        <img src="assets/img1.jpg">
+
+ <ul style="padding-top: 0px;">
+            <nav>
+
+
+                <a href="principal.html">
+                    <li>Inicio</li>
+                </a>
+                <a href="nuevadonacion.html">
+                    <li>Donar</li>
+                </a>
+                <a href="registrouser.html">
+                    <li>Registro</li>
+                </a>
+                <a href="acercade.html">
+                    <li>Acerca de</li>
+                </a>
+
+                <a href="ideapropuesta.html">
+                    <li>información idea propuesta</li>
+                </a>
+
+
+                <a href="index.html">
+                    <li>Salir</li>
+                </a>
+
+            </nav>
+        </ul>
+
+
+        <div id="ellipsis">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+<div class="main" style="margin-top: 50px;
+                         margin-left: 25%">
+
+        <h2>Datos de acceso</h2>
+        <form id="form_id" method="post" name="myform">
+            <label>Nombre de usuario:</label>
+            <input id="username" name="username" type="text"/>
+            <label>Contraseña:</label>
+            <input id="password" name="password" type="password"/>
+            <input id="submit" onclick="validate()" type="button" value="Acceder"/>
+        </form>
+    </div>
+</div>
+
+ 
+    
+
+
+<div class="footer">
+    <p>Donaciones Covid
+    </p> Usuario: donaciones <p>Contraseña: donaciones123</p>
+</div>
+</body>
+</html>
